@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caudex:wght@700&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: "Poppins",sans-serif;
+    transition: 0.5s;
+}
+
+/* NAV BAR */
+nav{
+    background-color: #49392a;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px ;
+    height: 5rem;
+}
+
+nav .logo a{
+    color: #cab8a4;
+    font-size: 1.5rem;
+    margin-left: 25px;
+    font-family: 'Caudex', serif;
+}
+
+nav span{
+    color: #6f665b;
+    font-family: 'Caudex', serif;
+}
+
+nav ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    list-style: none;
+    margin-right: 10px;
+}
+
+ul a{
+    margin: 10px;
+    right: inherit;
+    color: #cab8a4;
+    font-size: larger;
+}
+
+nav ul li a:hover{
+    color: #ffffff;
+}
+
+#checkbox{
+    display: none;
+}
+
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 2rem;
+    color: #cab8a4;
+    cursor: pointer;
+    display: none;
+}
+
+.box1{
+    padding-right: 1.5rem;
+}
+
+
+.login a span{
+    font-size: large;
+    color: #cab8a4;
+    font-family: "Poppins",sans-serif;
+}
+
+button{
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    left: 5%;
+    transition: 0.3s;
+    border-radius: 50rem;
+}
+
+button:hover{
+    background-color: #6f665b;
+    border-radius: 50rem;
+}
+
+.container i{
+    margin-right: 2px;
+    font-size: 1.2rem;
+    color: #cab8a4;
+}
+
+.login .container span:hover{
+    color: #ffffff;
+}
+
+@media (max-width:943px){
+    .box1{
+        padding-right: 4rem;
+    }
+    .icons{
+        display: inline-flex;
+    }
+
+    #checkbox:checked~.icons #menu-icon{
+        display: none;
+    }
+
+    .icons #close-icon{
+        display: none;
+    }
+
+    #checkbox:checked~.icons #close-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 8.4%;
+        left: 0;
+        height: 0;
+        width: 100%;
+        background: #49392a;
+        transition: .3s ease;
+        overflow: hidden;
+    }
+
+    #checkbox:checked~.navbar{
+        height: 20rem;
+    }
+
+    .navbar li{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;     
+        transform: translateY(-50px);
+        transition: .3s ease;
+    }
+
+    #checkbox:checked~.navbar li{
+        transform: translateY(0);
+    }
+}
