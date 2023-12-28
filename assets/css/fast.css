@@ -290,20 +290,37 @@ ul a {
   .home-img img {
     height: 30rem;
   }
+
+  .pre-projects {
+    font-size: medium;
+    margin-top: 1rem;
+  }
+
+  .pre-projects a {
+    padding: 5px 10px;
+  }
 }
 
 @media (max-width: 540px) {
   .home-section .home-main {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .home-main .home {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .home-img img {
     height: 27rem;
     margin-left: 0;
+  }
+  .pre-projects {
+    font-size: medium;
+    margin-top: 1rem;
+  }
+
+  .pre-projects a {
+    padding: 5px 10px;
   }
 }
 
