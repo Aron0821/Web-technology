@@ -171,11 +171,6 @@ ul a {
   #checkbox:checked ~ .nav-bar {
     height: 20rem;
   }
-
-  .nav-bar li {
-    display: block;
-  }
-
   .nav-connect {
     margin-left: auto;
   }
